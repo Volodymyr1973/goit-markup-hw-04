@@ -403,6 +403,39 @@ img {
   fill: currentColor;
 }
 
+/* -----Клиенты----- */
+
+.client-lists {
+  display: flex;
+  justify-content: center;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+.client-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.client-link:hover {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  color: #2196f3;
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
 /* -----Футер----- */
 
 .footer {
