@@ -97,16 +97,16 @@ img {
 
 /* -----Линки хедера----- */
 
-.header-lists .link,
-.header-contact-lists .link {
-  display: block;
+.header-lists,
+.header-contact-lists {
+  /* display: inline-block; */
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
 /* -----Блок навигации----- */
 
-.main-nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
@@ -115,6 +115,8 @@ img {
 
 .logo {
   margin-right: 93px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -137,7 +139,7 @@ img {
   color: var(--accent-color);
 }
 
-.nav-list {
+.header-lists {
   display: flex;
   align-items: center;
 }
@@ -170,7 +172,7 @@ img {
 
 /* -----Контакты хедера----- */
 
-.nav-contact {
+.header-contact-lists {
   display: flex;
   margin-left: auto;
   align-items: center;
@@ -181,19 +183,29 @@ img {
 }
 
 .header-contact-link {
+  display: inline-flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  vertical-align: middle;
 }
 
+/*-----телефон и почта на разной высоте----- */
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--accent-color);
 }
 
+.header-contact-pic {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /* -----Герой----- */
 .hero {
+  max-width: 1600px;
+  height: 600px;
   background: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
