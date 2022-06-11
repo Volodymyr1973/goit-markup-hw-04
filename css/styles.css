@@ -183,12 +183,12 @@ img {
 }
 
 .header-contact-link {
-  display: inline-flex;
+  /* display: inline-flex; */
+  /* vertical-align: middle; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  vertical-align: middle;
 }
 
 /*-----телефон и почта на разной высоте----- */
@@ -211,6 +211,8 @@ img {
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -378,20 +380,18 @@ img {
   justify-content: center;
 }
 
-.team-card-item {
-}
-
 .team-card-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .team-card-link {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   color: #afb1b8;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding: 12px;
 }
 
 .team-card-link:hover,
@@ -408,18 +408,16 @@ img {
 
 .client-lists {
   display: flex;
-  justify-content: center;
+  gap: 30px;
 }
 
-.client-item:not(:last-child) {
-  margin-right: 30px;
+.clien-item {
+  flex-basis: calc((100% - 150px) / 6);
 }
+
 .client-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
+  display: block;
+  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
