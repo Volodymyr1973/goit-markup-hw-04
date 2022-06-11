@@ -206,7 +206,8 @@ img {
 .hero {
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/hero-big.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('./images/hero-big.jpg');
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -603,8 +604,8 @@ img {
   margin-bottom: 0;
 } */
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-item:hover,
+.portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
