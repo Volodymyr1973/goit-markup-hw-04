@@ -425,9 +425,8 @@ img {
   color: #afb1b8;
 }
 
-.client-link:hover {
-  width: 170px;
-  height: 92px;
+.client-link:hover,
+.client-link:focus-within {
   border: 1px solid #2196f3;
   border-radius: 4px;
   color: #2196f3;
@@ -610,7 +609,7 @@ img {
 } */
 
 .portfolio-link {
-  display: block;
+  display: inline-block;
 }
 
 .portfolio-link:hover {
