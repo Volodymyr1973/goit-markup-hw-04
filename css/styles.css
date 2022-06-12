@@ -183,15 +183,14 @@ img {
 }
 
 .header-contact-link {
-  /* display: inline-flex; */
-  /* vertical-align: middle; */
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-/*-----телефон и почта на разной высоте----- */
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--accent-color);
@@ -411,13 +410,13 @@ img {
   gap: 30px;
 }
 
-.clien-item {
+.client-item {
   flex-basis: calc((100% - 150px) / 6);
 }
 
 .client-link {
   display: block;
-  padding: 16px 32px;
+  padding: 16px 0;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
@@ -431,6 +430,8 @@ img {
 }
 
 .client-icon {
+  display: block;
+  margin: 0 auto;
   fill: currentColor;
 }
 
